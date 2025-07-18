@@ -6,9 +6,25 @@ public class Studente extends Persona{
 
     private int matricola;
 
+    private Computer computer;
+
     public Studente(String nome, String cognome, int eta, int matricola){
         super(nome, cognome, eta);
         this.matricola=matricola;
+    }
+
+    public Studente(String nome, String cognome, int eta, int matricola, Computer computer) {
+        super(nome, cognome, eta);
+        this.matricola = matricola;
+        this.computer = computer;
+    }
+
+    public Computer getComputer() {
+        return computer;
+    }
+
+    public void setComputer(Computer computer) {
+        this.computer = computer;
     }
 
     public int getMatricola() {
@@ -20,8 +36,11 @@ public class Studente extends Persona{
     }
 
     @Override
-    public String toString(){
-        return super.toString() + ", matricola: " + matricola;
+    public String toString() {
+        return "Studente{" +
+                "matricola=" + matricola +
+                ", computer=" + computer +
+                "} " + super.toString();
     }
 
     @Override

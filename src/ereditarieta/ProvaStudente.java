@@ -25,6 +25,12 @@ public class ProvaStudente {
 
         Persona p = new Studente("Mario", "Rossi", 34, 1);
 
+        Computer computer = new Computer("M1", "Apple", 15);
+
+        s1.setComputer(computer);
+
+        System.out.println(s1);
+
 
         //il cast esplicito va a buon fine se il tipo dinamico della variabile superclasse è un oggetto dello stesso tipo
         //del tipo del cast
