@@ -35,4 +35,25 @@ public class Studente extends Persona{
     public int hashCode() {
         return Objects.hashCode(matricola);
     }
+
+    //se il metodo richiede di accedere ad una caratteristica della sottoclasse e il parametro di ingresso del metodo è di tipo superlcasse
+    //allora devo vericare che la variabile abbia un tipo dinamico uguale a quello ricercato e poi fare il cast esplicito
+    public boolean stessaMatricola(Persona p){
+
+        if(p instanceof Studente){
+
+            Studente s = (Studente) p;
+
+            if(matricola==s.getMatricola()){
+                return true;
+            }
+            else{
+                return false;
+            }
+
+        }
+        return false;
+
+
+    }
 }

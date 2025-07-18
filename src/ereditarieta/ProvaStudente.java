@@ -22,5 +22,16 @@ public class ProvaStudente {
         System.out.println(s2.hashCode());
 
         System.out.println(s1==s2);
+
+        Persona p = new Studente("Mario", "Rossi", 34, 1);
+
+
+        //il cast esplicito va a buon fine se il tipo dinamico della variabile superclasse è un oggetto dello stesso tipo
+        //del tipo del cast
+        Studente s = (Studente)p;
+
+        System.out.println(s.getMatricola());
+
+
     }
 }

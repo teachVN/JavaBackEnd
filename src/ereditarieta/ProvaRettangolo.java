@@ -3,7 +3,7 @@ package ereditarieta;
 public class ProvaRettangolo {
 
     public static void main(String[] args) {
-        Rettangolo r = new Rettangolo(5,9);
+        Rettangolo r = new Rettangolo(2,8);
 
         //cast implicito: da oggetto di tipo sottoclasse a variabile di tipo superclasse
         //sulla variabile p posso chiamare solo i metodi della superclasse e non quelli della sottoclasse in fase di scrittura
@@ -35,7 +35,11 @@ public class ProvaRettangolo {
             System.out.println(p2.perimetro());
         }
 
+    Quadrato q = new Quadrato(4);
 
+        System.out.println(r.stessaArea(q));
+
+        
 
     }
 }

@@ -36,8 +36,8 @@ public class Rettangolo extends Poligono implements PoligonoUtility{
     }
 
     @Override
-    public boolean stessaArea(Rettangolo r) {
-        if(area()==r.area()){
+    public boolean stessaArea(Poligono p) {
+        if(area()==p.area()){
             return true;
         }
         return false;
